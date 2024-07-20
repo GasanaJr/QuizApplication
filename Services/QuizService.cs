@@ -68,8 +68,8 @@ namespace QuizApp.Services
                                 new AnswerOption { Text = "A function" },
                                 new AnswerOption { Text = "I don't know" }
                             },
-                            CorrectOptionIndex = 2,
-                            ScoreWeight = 1
+                            CorrectOptionIndex = 0,
+                            ScoreWeight = 5
                         },
                         new Question
                         {

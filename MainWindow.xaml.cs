@@ -163,10 +163,16 @@ namespace QuizApp
         /// </summary>
         private void EndQuiz()
         {
+            int totalScoreWeight = 0;
+            foreach (var question in _currentQuiz.Questions)
+            {
+                totalScoreWeight += question.ScoreWeight;
+            }
+            double percentageScore = (_score / (double)totalScoreWeight) * 100;
             QuizPanel.Visibility = Visibility.Collapsed;
             ScoreTextBlock.Visibility = Visibility.Visible;
             RetakeQuizButton.Visibility = Visibility.Visible;
-            ScoreTextBlock.Text = $"Your score: {_score}/{_currentQuiz.Questions.Count} = {(_score / (double)_currentQuiz.Questions.Count) * 100}%";
+            ScoreTextBlock.Text = $"Your score: {_score}/{totalScoreWeight} = {percentageScore}%";
         }
 
         /// <summary>
