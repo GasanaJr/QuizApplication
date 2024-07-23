@@ -14,7 +14,6 @@ Welcome to the Quiz Application! This application allows users to take multiple-
    - [Retaking a Quiz](#retaking-a-quiz)
 5. [Troubleshooting](#troubleshooting)
 6. [Contributing](#contributing)
-7. [License](#license)
 
 ## System Requirements
 
