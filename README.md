@@ -21,7 +21,7 @@ Welcome to the Quiz Application! This application allows users to take multiple-
 - Operating System: Windows 10 or higher
 - .NET 8.0 Runtime
 - 2GB RAM minimum
-- 100MB free disk space
+- 25MB free disk space
 
 ## Installation
 
